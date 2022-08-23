@@ -4,8 +4,12 @@
         <title>Parrr</title>
         <link href="style.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://use.typekit.net/iym0nlx.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <div id="topnav">
+            <button onclick="toggleLightMode()" id="lightmode">light / dark</button>
+        </div>
         <header>
             <h1>Parrr Geng</h1>
         </header>
@@ -29,6 +33,14 @@
                 <br>
                 <h3>Moving Castles</h3>
                 <p>Character design for <a href="https://movingcastles.world/" target="_blank">Moving Castles</a>.</p>
+                
+                <form action="" method="post">
+                    <p>Any thoughts or feedbacks? Please let me know!</p>
+                    <textarea rows="3" cols="20" id="message" name="message">That sounds interesting!</textarea><br>
+                    <input type="text" value="Email(optional)" id="email" name="email" />
+                    <input type="submit" value="Send" name="submit" id="submit" />
+
+                </form>
             </details>
             <br>
             <details>
@@ -57,8 +69,8 @@
         </footer>
 
     
-        
-
+       
+        <script src="/script.js"></script>
     </body>
 
 </html>

@@ -1,11 +1,17 @@
+
 body {
     font-family: work-sans, sans-serif;
     font-size: 24px;
-    min-width: 200px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     background-color: #071013;
     color: #EA4859;
+}
+
+#topnav {
+    padding: 2em;
+    float: right;
+    color:#EA4859;
 }
 
 header {
@@ -31,12 +37,22 @@ p {
     line-height: 1.4em;
 }
 
+a:link, a:visited {
+    color:#EA4859;
+}
+
+a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
 .semibold {
     font-weight:700;
 }
 
 img {
-    width: 800px;
+    width: 100%;
 }
 
 hr {
@@ -46,17 +62,62 @@ hr {
 }
 
 button {
-    padding: .8em 2.5em;
+    padding: 1em 3em;
     border: 0;
     border-radius: 6px;
     background: rgb(210,255,229);
-    background: linear-gradient(180deg, rgba(210,255,229,0.9318321078431373) 0%, rgba(142,251,58,1) 100%);
-    box-shadow: 0 6px 0 #AA888B;
+    background: linear-gradient(180deg, rgba(255, 210, 210, 0.932) 0%, rgba(142,251,58,1) 100%);
+    
 }
 
 button a {
     font-size: 1.5em;
+    font-weight:600;
     text-decoration: none;
+}
+
+form {
+    border-radius: 10px;
+    background-color: #844F4F;
+    color:#071013;
+    padding: .5em 1em 1em;
+    font-family: work-sans, sans-serif;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+form textarea {
+    width: 100%;
+    height: 5em;
+    border-radius: 5px;
+    border:#071013; 
+    background-color:#071013;
+    color:#AAAAAA;
+    font-size: 0.8em;
+    font-family: work-sans, sans-serif;
+    margin-bottom: 1em;
+}
+
+form #email {
+    width: 70%;
+    height: 2.5em;
+    border-radius: 5px;
+    border:#071013;
+    background-color: #071013;
+    color:#AAAAAA;
+    font-size: 0.8em;
+    font-family: work-sans, sans-serif;
+}
+
+form #submit {
+    font-size: 0.8em;
+    font-family: work-sans, sans-serif;
+    float: right;
+    padding: .5em 2.5em;
+    border: 0;
+    border-radius: 5px;
+    background: rgb(210,255,229);
+    background: linear-gradient(180deg, rgba(210,255,229,0.9318321078431373) 0%, rgba(142,251,58,1) 100%);
 }
 
 details > summary {
@@ -66,7 +127,42 @@ details[open] summary {
     list-style-type: "  \2193  ";
 }
 
+.light-mode {
+    background-color: rgb(246, 251, 255);
+    color:#071013;
+}
+
+#lightmode {
+    padding: 0;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: none;
+    
+}
 
 
 
+@media only screen and (max-width:768px) {
+    body,
+    img {
+        width: 100%;
+    }
 
+    header,
+    footer {
+        padding: 0;
+        margin: 2em 1em;
+    }
+
+    section {
+        padding: 0;
+        margin: 0em 1em 3em;
+    }
+
+    button {
+        padding: 1em 16em;
+    }
+
+}
