@@ -1,8 +1,7 @@
-
 body {
     font-family: work-sans, sans-serif;
-    font-size: 24px;
-    max-width: 1000px;
+    font-size: 18px;
+    max-width: 640px;
     margin: 0 auto;
     background-color: #071013;
     color: #EA4859;
@@ -22,10 +21,24 @@ section {
     margin: 4em 0;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+.grid-item {
+    grid-column: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
 nav li{
     list-style-type: none;
     display: inline-block;
-    margin: 1em 2em;
+    margin: 1em 2em 1em 0;
 }
 
 footer {
@@ -66,12 +79,11 @@ button {
     border: 0;
     border-radius: 6px;
     background: rgb(210,255,229);
-    background: linear-gradient(180deg, rgba(255, 210, 210, 0.932) 0%, rgba(142,251,58,1) 100%);
-    
+    background: linear-gradient(180deg, rgba(255, 210, 210, 0.932) 0%, rgba(142,251,58,1) 100%);    
 }
 
 button a {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight:600;
     text-decoration: none;
 }
